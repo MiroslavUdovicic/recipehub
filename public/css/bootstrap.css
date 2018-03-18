@@ -1311,7 +1311,8 @@ select.form-control:focus::-ms-value {
 .input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
 .input-group-lg > .input-group-prepend > .form-control-plaintext.btn,
-.input-group-lg > .input-group-append > .form-control-plaintext.btn {
+.input-group-lg > .input-group-append > .form-control-plaintext.
+ {
   padding-right: 0;
   padding-left: 0;
 }
@@ -1660,7 +1661,6 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
   color: #212529;

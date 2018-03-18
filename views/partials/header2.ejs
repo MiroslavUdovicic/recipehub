@@ -21,58 +21,6 @@
 <body>
 
   <header>
-    <!-- <nav id="nav">
-      <a class="navbar-brand" href="/"><span><i class="fas fa-utensils fa-fw"></i></span> RecipeHub</a>
-      <button id="toggler">
-        <span><i class="fas fa-bars fa-fw fa-2x"></i></span>
-      </button>
-      <div class="collapse">
-        <ul id="nav-ul">
-          <li class="left-nav home-link"><a href="/">Home</a></li>
-          <li class="left-nav"><a href="/show-recipes/1">Recipes</a></li>
-          <li class="left-nav"><a href="/contact/">Contact</a></li>
-          <% if (!currentUser) { %>
-          <li class="dark">
-            <a href="#" onclick="showMenu()"><span><i class="fas fa-sign-in-alt"></i></span> Log In</a>
-            <div id="dropdown-menu">
-              <form action="/login" method="post">
-                <div class="form-group">
-                  <label for="username">User name:</label>
-                  <input id="username" class="dropdown-item form-control" type="text" name="username" placeholder="Username" required>
-                </div>
-                <div class="form-group">
-                  <label for="password">Password:</label>
-                  <input id="password" class="dropdown-item form-control" type="password" name="password" placeholder="Password" required>
-                </div>
-                <div class="form-group">
-                  <button class="btn btn-white" type="submit">Login</button>
-                </div>
-              </form>
-            </div>
-
-          </li>
-          <li class="dark"><a href="/register"><span><i class="fas fa-user-plus"></i></span> Sign Up</a></li>
-          <%} else {%>
-
-            <li class="dark" style="cursor: pointer" onclick="showMenu()">
-              <div class="user-pic" style="background-image: url('<%=currentUser.profilePic%>')">
-
-              </div>
-              <span class="user"><%=currentUser.username%><i class="fas fa-caret-down fa-fw"></i></span>
-              <div id="dropdown-menu">
-                <a class="dropdown-item" href="/users/<%=currentUser._id%>"><i class="fas fa-user fa-fw"></i>Profile</a>
-                <a class="dropdown-item" href="/users/<%=currentUser.id%>/edit"><i class="fas fa-pencil-alt fa-fw"></i>Edit profile</a>
-                <a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt fa-fw"></i>Sign out</a>
-              </div>
-            </li>
-
-          <%}%>
-        </ul>
-      </div>
-    </nav>
-    <% if (currentUser) { %>
-
-    <%}%> -->
 
     <nav class="navbar navbar-expand-md navbar-solid">
       <a class="navbar-brand" href="/"><img class="img-fluid" src="/img/logos.png" alt=""></a>
