@@ -1,0 +1,172 @@
+@media only screen and (max-width: 480px) {
+  .active, header nav ul li a:hover{
+    color: #F9C56A;
+    border-bottom: none;
+  }
+  nav.navbar{
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.9)
+  }
+  header nav a.navbar-brand{
+    font-size: 20px;
+  }
+  header nav ul li{
+  text-align: center;
+  }
+  header nav a.navbar-brand img{
+    height: 40px;
+  }
+  .user-photo{
+    display: none;
+  }
+  .user-menu a{
+    text-align: center;
+  }
+  .hero .background-image{
+    background-position: center;
+  }
+  .hero-content{
+    width: 100%;
+  }
+  .hero-content img{
+    height: 200px;
+  }
+  .hero-content h1{
+    font-size: 30px;
+    color: #F9C56A;
+    text-align: center;
+  }
+  .hero-content p{
+    font-size: 15px;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .recipes-list-landing{
+    padding: 5px;
+    margin-top: 35px;
+  }
+  .recipes-list-landing h1{
+    font-size: 30px;
+  }
+  .card, .card-landing{
+    flex-basis: 100%;
+  }
+  .add-recipe-caption{
+    text-align:center;
+  }
+  .search-recipes{
+    padding: 0 10px;
+    text-align: center;
+  }
+  .recipes-list{
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .recipe-categories{
+    flex-basis: 100%;
+  }
+  .list-group-item{
+    padding: 5px;
+  }
+  .content{
+    margin-top: 30px;
+    flex-basis: 100%;
+  }
+  .show-recipe{
+    padding: 0 10px;
+    margin-top: 60px;
+  }
+  .recipe-wrapper{
+    margin: 0;
+  }
+  .recipe-name{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .recipe-name h1{
+    font-size: 30px;
+  }
+  .recipe-about{
+    flex-direction: column;
+  }
+  .show-left, .show-right{
+    flex-basis: 100%;
+    margin: 5px 0;
+  }
+  .directions{
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .ingredients, .instructions{
+    flex-basis: 100%;
+    padding: 0 10px;
+  }
+  .instructions{
+    margin-top: 50px;
+  }
+  .show-comments{
+    padding: 0 10px;
+  }
+  .comments-header h3{
+    font-size: 20px;
+  }
+  .btn{
+    padding: 5px;
+    font-size: 15px;
+  }
+  .modal-content{
+    width: 90%;
+    margin: 50% auto;
+  }
+  .user-wrapper{
+    padding: 10px;
+    margin-top: 60px;
+    flex-direction: column;
+  }
+  .user-info{
+    flex-basis: 100%;
+  }
+ .user-posts{
+   margin-top: 60px;
+   flex-basis: 100%;
+ }
+  .register-form{
+    margin-top: 60px;
+    padding: 10px;
+  }
+  .dropdown-menu{
+    width: 97%;
+  }
+  .new-recipe-form{
+    padding: 10px;
+    margin-top: 60px;
+  }
+
+
+
+
+
+  footer{
+    padding: 5px;
+  }
+  .footer-top{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-info, .footer-contact, .footer-socials{
+    align-self: center;
+    text-align: center;
+    flex-basis: 100%;
+    padding: 0;
+  }
+  .footer-bottom{
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-nav{
+    display: none;
+  }
+}

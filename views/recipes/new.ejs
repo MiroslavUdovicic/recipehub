@@ -1,0 +1,65 @@
+<% include ../partials/header2 %>
+
+  <section class="new-recipe">
+    <div class="new-recipe-form">
+      <h1>Add new recipe</h1>
+
+      <form action="/recipes" method="post">
+        <div class="form-group">
+          <label for="recipe-name">Recipe name:</label>
+          <input id="recipe-name" class="form-control" type="text" name="name" maxlength="40" placeholder="40 characters max" required>
+        </div>
+        <div class="form-group">
+          <label for="category"></label>
+          <select id="category" class="form-control" name="category">
+            <option value="snacks" name:"snacks">Snacks</option>
+            <option value="soups" name:"soups">Soups</option>
+            <option value="breads">Breads</option>
+            <option value="mainCourse">Main Courses</option>
+            <option value="desserts">Desserts</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="recipe-img">Image url:</label>
+          <input id="recipe-img" class="form-control" type="text" name="image" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Aproximate time required(minutes):</label>
+          <input class="form-control" id="time" type="number" name="time" required>
+        </div>
+        <div class="form-group" id="ingredientsAdd">
+          <label for="ingredients">Ingredients:</label>
+          <input class="form-control" id="ingredients" type="text" name="ingredients">
+          <input class="form-control" id="ingredients" type="text" name="ingredients">
+          <input class="form-control" id="ingredients" type="text" name="ingredients">
+        </div>
+        <div class="form-group">
+          <a id="appendInput" onclick="addInput()">Add another ingredient</a>
+        </div>
+        <div class="form-group">
+          <label for="description">Short description:</label>
+          <textarea id="description" class="form-control" name="description" rows="8" cols="80" required>
+
+          </textarea>
+        </div>
+
+          <div class="form-group">
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" class="form-control" name="instructions" rows="8" cols="80" required>
+
+            </textarea>
+          </div>
+          <script>
+              CKEDITOR.replace( 'description' );
+              CKEDITOR.replace( 'instructions' );
+            </script>
+
+        <!-- <input type="text" name="description" placeholder="Description"> -->
+        <button class="btn btn-green">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <% include ../partials/footer %>

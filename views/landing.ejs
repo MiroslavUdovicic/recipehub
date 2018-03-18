@@ -1,0 +1,50 @@
+<% include partials/header%>
+
+<section class="hero">
+  <div class="background-image" style="background-image: url('/img/main2.jpg')"></div>
+  <div class="hero-content">
+    <img src="/img/logo.png" alt="">
+    <h1>Welcome to Recipe Hub!</h1>
+    <p>RecipeHub is the ultimate source of recipes for all kinds of food. Join our community and start contributing today! There is no sincerer love than the love of food.</p>
+    <!-- <a href="/show-recipes/1" class="btn btn-green">Take a Look</a> -->
+  </div>
+</section>
+
+
+
+<section class="recipes-list-landing">
+  <div class="col-md-12">
+    <h1>Popular Recipes</h1>
+    <p class="text-center">Find out what's popular among our community.</p>
+  </div>
+  <hr>
+  <div class="content-landing">
+      <% recipes.forEach(function (recipe){  %>
+        <div class="card-landing">
+          <div class="recipe-img" style="background-image: url('<%=recipe.image%>')">
+          </div>
+          <div class="recipe-info">
+            <div class="recipe-desc">
+              <div class="user-pic-recipe" style="background-image: url('<%=recipe.author.profilePic%>')"></div>
+              <h2><a href="/recipes/<%=recipe._id%>"><%=recipe.name%></a></h2>
+              <p>by <span><a href="/users/<%=recipe.author.id%>"><%=recipe.author.username%></a></span></p>
+            </div>
+            <div class="actions">
+              <p><i class="fas fa-clock"></i> 1h</p>
+              <p><i class="fas fa-comments"></i> <%=recipe.comments.length%></p>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+    </div>
+
+</section>
+
+<div class="view-all">
+  <a href="/show-recipes/1" class="btn btn-green">View All</a>
+</div>
+
+
+
+
+<% include partials/footer %>

@@ -1,0 +1,1106 @@
+/* line 1, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 6, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+body {
+  font-family: Poppins, sans-serif;
+  color: #828281;
+}
+
+/* line 10, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+h1,
+h2,
+h3 {
+  color: #4b4741;
+}
+
+/* line 15, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+img {
+  vertical-align: middle;
+}
+
+/* line 22, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+section {
+  display: flex !important;
+  flex-direction: column;
+}
+
+/* line 26, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+ul {
+  list-style: none;
+}
+
+/* line 29, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 32, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+hr {
+  width: 250px;
+  height: 3px;
+  background-color: #F9C56A;
+  border: 0;
+  margin: 1rem auto;
+  margin-bottom: 50px;
+}
+
+/* line 40, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.btn {
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* line 56, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.btn-green {
+  background: #F9C56A;
+  color: #000;
+}
+
+/* line 60, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.btn-green:hover {
+  background: #000;
+  color: #F9C56A;
+  border: 1px solid #F9C56A;
+}
+
+/* line 65, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.btn-white {
+  background: #fff;
+  color: #000;
+}
+
+/* line 69, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.btn-white:hover {
+  background: #F9C56A;
+  color: #fff;
+  border: 1px #fff solid;
+}
+
+/* line 76, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+}
+
+/* line 82, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+nav.navbar {
+  background-color: rgba(0, 0, 0, 0.57);
+  padding: 20px 100px;
+  transform: translateY(-110px);
+  animation: slideDown 1s .3s ease-out forwards;
+}
+
+/* line 88, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+nav.navbar-solid {
+  background: #000;
+}
+
+/* line 91, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.ml-auto {
+  margin-left: auto;
+}
+
+@keyframes slideDown {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* line 98, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+header nav a.navbar-brand img {
+  height: 60px;
+}
+
+/* line 101, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+header nav a.navbar-brand span {
+  color: #F9C56A;
+}
+
+/* line 104, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+header nav ul li {
+  margin: 0 10px;
+  transition: all .4s ease;
+}
+
+/* line 108, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+header nav ul li a {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+
+/* line 113, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+header nav ul li a:hover {
+  border-bottom: 1px solid #F9C56A;
+}
+
+/* line 116, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.active {
+  border-bottom: 1px solid #F9C56A;
+}
+
+/* line 119, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+header nav ul li.active a {
+  color: #fff;
+}
+
+/* line 122, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.navbar-toggler span {
+  color: #F9C56A;
+}
+
+/* line 125, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.login-menu {
+  width: 200px;
+}
+
+/* line 128, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-menu a {
+  color: #F9C56A;
+}
+
+/* line 131, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-pic {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* line 139, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-pic-recipe {
+  border: 3px solid #fff;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* line 148, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-photo {
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* line 152, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user {
+  color: #fff;
+}
+
+/* line 158, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+/* line 167, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.hero .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  animation: zoomin 20s linear infinite;
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* line 185, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.hero-content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 1s 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 198, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.hero-content img {
+  height: 250px;
+}
+
+/* line 201, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.hero-content h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #F9C56A;
+}
+
+/* line 207, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.hero-content p {
+  font-size: 17px;
+  margin: 10px 0;
+  width: 50%;
+  text-align: center;
+}
+
+/* line 213, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.view-all {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/* line 218, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.view-all a.btn {
+  width: 150px;
+}
+
+/* line 223, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.add-recipe {
+  background: url("../img/recipes.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 232, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.add-recipe-caption {
+  opacity: 0;
+  animation: fadeIn 1s 1s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 239, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.add-recipe h3 {
+  margin-bottom: 1rem;
+  color: #F9C56A;
+}
+
+/* line 243, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.search-recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* line 250, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.search-recipes h2 {
+  margin-bottom: 1rem;
+}
+
+/* line 253, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipes-list {
+  padding: 50px;
+  flex-direction: row;
+}
+
+/* line 257, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipes-list-landing {
+  padding: 80px;
+}
+
+/* line 260, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipes-list h1,
+.recipes-list-landing h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* line 266, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-categories {
+  flex-basis: 20%;
+}
+
+/* line 269, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.content,
+.content-landing {
+  display: flex;
+  justify-content: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 80%;
+}
+
+/* line 278, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.card,
+.card-landing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  margin: 0 15px 15px 15px;
+  flex-basis: 30%;
+  background: #fff;
+  border-bottom: 4px solid #F9C56A;
+  display: flex;
+}
+
+/* line 292, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.card-landing {
+  flex-basis: 22%;
+}
+
+/* line 295, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.card figure,
+.card-landing figure {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 300, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.card img,
+.card-landing img {
+  max-width: 100%;
+}
+
+/* line 304, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-img {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 309, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-info {
+  padding: 0 10px;
+  position: relative;
+  top: -8%;
+}
+
+/* line 314, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-info h2 a {
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+}
+
+/* line 323, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-desc {
+  height: 180px;
+  overflow: hidden;
+}
+
+/* line 327, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-info p span a {
+  color: #F9C56A;
+}
+
+/* line 330, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+/* line 337, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.new-recipe {
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 343, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.new-recipe-form {
+  margin-top: 100px;
+  padding: 50px;
+}
+
+/* line 348, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+#appendInput {
+  background: none;
+  border: none;
+  color: blue;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* line 358, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.show-recipe {
+  margin-top: 100px;
+  padding: 0 150px;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 366, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-wrapper {
+  margin-top: 60px;
+  background-color: #fff;
+  width: 100%;
+}
+
+/* line 371, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.show-recipe h1 {
+  padding: 10px 0;
+}
+
+/* line 374, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 379, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 384, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-about {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+/* line 388, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.show-left {
+  flex-basis: 50%;
+}
+
+/* line 391, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.show-img {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 396, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-avatar-recipe {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* line 404, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-avatar-recipe img {
+  width: 70px;
+}
+
+/* line 407, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-author {
+  display: flex;
+  align-items: center;
+}
+
+/* line 412, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-author a {
+  font-size: 20px;
+  color: #000;
+}
+
+/* line 416, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.recipe-author a:hover {
+  color: #F9C56A;
+}
+
+/* line 419, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.show-right {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+}
+
+/* line 424, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.show-right .desc {
+  margin: auto 30px;
+  padding: 20px;
+  background: #e4e4e4;
+}
+
+/* line 429, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.submited {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: -3%;
+}
+
+/* line 436, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.directions {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  padding: 0 150px;
+}
+
+/* line 442, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.directions h3 {
+  margin-bottom: 20px;
+}
+
+/* line 445, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.ingredients {
+  flex-basis: 20%;
+  background: #e1e1e1;
+  padding: 0 10px;
+}
+
+/* line 450, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.instructions {
+  flex-basis: 80%;
+  padding: 0 50px;
+}
+
+/* line 457, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.show-comments {
+  width: 100%;
+  margin: 100px 0;
+  padding: 0 150px;
+}
+
+/* line 463, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.comments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* line 469, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+#comment-form {
+  display: none;
+  margin-bottom: 40px;
+}
+
+/* line 473, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.comment-form-control {
+  display: flex;
+  align-items: center;
+}
+
+/* line 477, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.comment-form-control button {
+  align-self: flex-end;
+  margin-left: 10px;
+}
+
+/* line 481, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.comment {
+  display: flex;
+  align-items: center;
+}
+
+/* line 485, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.comment-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: rgba(219, 218, 101, 0.45);
+  margin-bottom: 5px;
+}
+
+/* line 493, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.comment-body a {
+  color: #000;
+}
+
+/* line 496, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.comment-buttons {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: .5s linear;
+}
+
+/* line 502, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.comment-body:hover .comment-buttons {
+  opacity: 1;
+}
+
+/* line 505, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.comment-buttons a {
+  color: #000;
+}
+
+/* line 508, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.comment-buttons form {
+  margin-left: 10px;
+}
+
+/* line 511, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.comment-buttons form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 520, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 525, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.register-form {
+  margin-top: 150px;
+}
+
+/* line 530, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-profile {
+  background-color: #f0f0f0;
+}
+
+/* line 533, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.userpic {
+  width: 190px;
+  height: 190px;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #d9d3d3;
+}
+
+/* line 540, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-wrapper {
+  padding: 150px;
+  display: flex;
+}
+
+/* line 544, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-info {
+  flex-basis: 30%;
+}
+
+/* line 547, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-name {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* line 552, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-name a {
+  margin-left: 10px;
+  color: #F9C56A;
+}
+
+/* line 556, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-about a {
+  color: #000;
+}
+
+/* line 559, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-posts {
+  flex-basis: 85%;
+  height: 500px;
+  overflow: scroll;
+}
+
+/* line 564, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.user-posts h3 {
+  margin-bottom: 10px;
+}
+
+/* line 567, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.post-body {
+  display: flex;
+  padding: 20px;
+  background: rgba(219, 218, 101, 0.45);
+  margin-bottom: 5px;
+}
+
+/* line 573, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.post-left {
+  flex-basis: 15%;
+}
+
+/* line 576, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.post-left .post-img {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 582, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.post-left a {
+  color: #000;
+  margin-top: 5px;
+}
+
+/* line 586, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.post-right {
+  flex-basis: 70%;
+  margin-left: 5px;
+}
+
+/* line 590, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.post-right a {
+  font-size: 12px;
+}
+
+/* line 595, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+footer {
+  background-image: url("../img/footer.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  box-shadow: -2px 0 5px grey;
+  padding: 0 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 605, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #fff;
+  padding: 5px;
+}
+
+/* line 612, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-weight: 100;
+}
+
+/* line 619, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.footer-top h3 {
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #F9C56A;
+}
+
+/* line 624, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.footer-info {
+  flex-basis: 40%;
+  align-self: flex-start;
+  padding-right: 20px;
+}
+
+/* line 629, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.footer-contact,
+.footer-socials {
+  flex-basis: 30%;
+  align-self: flex-start;
+  padding-right: 20px;
+}
+
+/* line 636, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.footer-socials ul {
+  display: flex;
+}
+
+/* line 639, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.footer-socials ul li a {
+  margin-left: 10px;
+  color: #fff;
+}
+
+/* line 643, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.footer-nav a {
+  margin-left: 15px;
+  letter-spacing: 2px;
+  color: #F9C56A;
+  font-weight: 100;
+}
+
+/* line 649, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+footer p {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+/* line 655, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* line 660, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+
+/* line 666, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.page-item.active-page .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #F9C56A;
+  border-color: #F9C56A;
+}
+
+/* line 672, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #F9C56A;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+/* line 682, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+/* line 689, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.page-link:hover {
+  color: #000;
+  text-decoration: none;
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+}
+
+/* line 696, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.page-link:focus {
+  z-index: 2;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* line 701, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+page-link:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+/* line 704, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+/* line 710, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.page-item:last-child .page-link {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+/* line 715, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+
+/* line 723, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.list-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/* line 734, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #F9C56A;
+  border: 1px solid #000;
+  transition: .5s ease;
+}
+
+/* line 743, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.list-group-item:hover {
+  background-color: #fff;
+}
+
+/* line 746, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.list-group-item:hover a {
+  color: #F9C56A;
+}
+
+/* line 749, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.list-group-item a {
+  color: #000;
+}
+
+/* line 757, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 769, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+/* line 778, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.modal-header {
+  background: #F9C56A;
+  text-align: right;
+  padding: 2px 5px;
+  color: #fff;
+}
+
+/* line 784, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.modal-body {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 790, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.closeBtnRecipe {
+  color: #fff;
+}
+
+/* line 793, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.closeBtnRecipe:hover,
+.closeBtnRecipe:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* line 806, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.alert {
+  position: absolute;
+  top: 17%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+  z-index: 100;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 821, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.alert-danger {
+  color: #721c24;
+  background-color: #f9d7da;
+}
+
+/* line 826, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+/* line 831, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+span.close {
+  cursor: pointer;
+}
+
+/* line 840, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+section.contact {
+  margin-top: 100px;
+}
+
+/* line 843, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
+.contact-form {
+  width: 700px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/*# sourceMappingURL=../css/style.map */

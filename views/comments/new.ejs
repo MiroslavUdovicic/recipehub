@@ -1,0 +1,12 @@
+<% include ../partials/header %>
+
+  <section class="new-comment">
+    <h1>Add new comment to <%=recipe.name%></h1>
+
+    <form action="/recipes/<%=recipe._id%>/comments" method="post">
+      <textarea name="comment[text]" rows="8" cols="80" required></textarea>
+      <button class="btn btn-green">Submit</button>
+    </form>
+  </section>
+
+  <% include ../partials/footer %>

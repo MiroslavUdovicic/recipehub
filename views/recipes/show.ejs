@@ -1,0 +1,141 @@
+<% include ../partials/header2 %>
+
+  <div id="recipeModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="closeBtnRecipe" onclick="closeModalRecipe()"><i class="fas fa-times-circle"></i></span>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete
+          <%= recipe.name %>?</p>
+        <form action="/recipes/<%=recipe._id%>?_method=delete" method="post">
+          <button class="btn btn-green" style="margin-left: 10px">Confirm</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <section class="show-recipe">
+
+    <div class="recipe-wrapper">
+      <div class="recipe-name">
+        <h1><%= recipe.name %></h1>
+
+        <div class="recipe-buttons">
+          <% if(currentUser && recipe.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin) { %>
+            <p><a class="btn btn-green" href="/recipes/<%=recipe._id%>/edit">Edit</a></p>
+            <button id="recipeModalBtn" class="btn btn-green" onclick="openModalRecipe()" style="margin-left: 10px">Delete</button>
+            <%}%>
+        </div>
+      </div>
+
+      <div class="recipe-about">
+
+        <div class="show-left">
+          <div class="show-img" style="background-image: url('<%= recipe.image %>')">
+            <!-- <img class="img-fluid" src="<%= recipe.image %>" alt=""> -->
+          </div>
+          <div class="submited">
+            <div class="recipe-author">
+              <div class="user-pic-recipe" style="background-image: url('<%=recipe.author.profilePic%>')">
+                <!-- <img src="<%=recipe.author.profilePic%>" alt=""> -->
+              </div>
+              <a href="/users/<%=recipe.author.id%>">
+                <%=recipe.author.username%>
+              </a>
+            </div>
+            <p>
+              <%= moment(recipe.createdAt).fromNow() %>
+            </p>
+          </div>
+        </div>
+
+
+        <div class="show-right">
+          <div class="desc">
+            <p>
+              <%- recipe.description %>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="directions">
+
+    <div class="ingredients">
+      <h3 class="text-center">Ingredients:</h3>
+      <ul>
+        <% recipe.ingredients.forEach(function(ingredient){ %>
+          <li>
+            <%= ingredient %>
+          </li>
+          <%});%>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <h3 class="text-center">Instructions:</h3>
+      <p><%-recipe.instructions%></p>
+    </div>
+  </section>
+
+
+
+
+  <section class="show-comments">
+    <div class="comments-header">
+      <h3>Comments ( <%= recipe.comments.length; %> )</h3>
+      <div>
+        <button class="btn btn-green" onclick="showCommentForm()">Add new comment</button>
+        <!-- <p><a class="btn btn-green" href="/recipes/<%=recipe._id%>/comments/new">Add new comment</a></p> -->
+      </div>
+    </div>
+
+    <div id="comment-form">
+      <form action="/recipes/<%=recipe._id%>/comments" method="post">
+        <div class="comment-form-control">
+          <textarea id="comment-text" name="comment[text]" rows="6" cols="60" required></textarea>
+          <button class="btn btn-green">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <% recipe.comments.forEach(function(comment){ %>
+
+      <div class="comment-body">
+
+        <div class="comment">
+          <div class="user-pic" style="background-image: url('<%=comment.author.profilePic%>')"></div>
+
+          <div class="user-name-time">
+          <p><strong><a href="/users/<%=comment.author.id%>"><%=comment.author.username %></a></strong>
+              <span style="font-size: 12px"><em><%= moment(comment.createdAt).fromNow() %></em></span></p>
+            <p><%= comment.text %></p>
+          </div>
+        </div>
+
+        <div class="comment-buttons">
+          <% if(currentUser && comment.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin) { %>
+            <!-- <p><a title="Edit comment" class="btn-editdelete" href="/recipes/<%=recipe._id%>/comments/<%=comment._id%>/edit"><i class="fas fa-edit"></i></a></p> -->
+            <form action="/recipes/<%=recipe._id%>/comments/<%=comment._id%>?_method=delete" method="post">
+              <button id="commentModalBtn" title="Delete comment" class="btn-editdelete"><i class="fas fa-trash-alt"></i></button>
+            </form>
+            <%}%>
+
+        </div>
+      </div>
+      <% }) %>
+
+
+  </section>
+
+
+  <% include ../partials/footer %>

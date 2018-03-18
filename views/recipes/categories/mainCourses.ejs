@@ -1,0 +1,107 @@
+<% include ../../partials/header%>
+
+  <section class="recipes">
+
+    <div class="add-recipe">
+      <h3>Have something tasty to share?</h3>
+      <a class="btn btn-green" href="/recipes/new"><i class="fas fa-plus"></i> Add new recipe</a>
+    </div>
+
+    <div class="search-recipes">
+      <h2>Search Recipes</h2>
+      <form class="" action="/recipes" method="get">
+        <div class="form-group" style="display: flex">
+          <input class="form-control" type="text" name="search" placeholder="Search...">
+          <button class="btn btn-green"><i class="fas fa-search fa-fw"></i></button>
+        </div>
+      </form>
+      <p>Variety of different recipes submited by our members. There's something for everyone!</p>
+    </div>
+
+    <hr>
+
+  </section>
+
+  <section class="recipes-list">
+
+    <div class="recipe-categories">
+      <ul class="list-group">
+        <li class="list-group-item"><a href="/show-recipes/1">All</a></li>
+        <li class="list-group-item"><a href="/show-recipes-category/snacks/1">Snacks</a></li>
+        <li class="list-group-item"><a href="/show-recipes-category/soups/1">Soups</a></li>
+        <li class="list-group-item"><a href="/show-recipes-category/breads/1">Breads</a></li>
+        <li class="list-group-item"><a href="/show-recipes-category/maincourses/1">Main Courses</a></li>
+        <li class="list-group-item"><a href="/show-recipes-category/desserts/1">Desserts</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <% recipes.forEach(function (recipe){  %>
+        <div class="card">
+          <div class="recipe-img" style="background-image: url('<%=recipe.image%>')">
+          </div>
+          <div class="recipe-info">
+            <div class="recipe-desc">
+              <div class="user-pic-recipe" style="background-image: url('<%=recipe.author.profilePic%>')"></div>
+              <h2><a href="/recipes/<%=recipe._id%>"><%=recipe.name%></a></h2>
+              <p>by <span><a href="/users/<%=recipe.author.id%>"><%=recipe.author.username%></a></span></p>
+            </div>
+            <div class="actions">
+              <p><i class="fas fa-clock"></i> 1h</p>
+              <p><i class="fas fa-comments"></i>
+                <%=recipe.comments.length%>
+              </p>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+    </div>
+  </section>
+
+
+  <div class="pagination-wrapper">
+    <% if (pages > 0) { %>
+      <ul class="pagination text-center">
+        <% if (current == 1) { %>
+          <li class="page-item disabled"><a class="page-link">First</a></li>
+          <% } else { %>
+            <li class="page-item"><a class="page-link" href="/show-recipes-category/mainCourses/1">First</a></li>
+            <% } %>
+              <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+                <% if (i !== 1) { %>
+                  <li class="page-item disabled"><a>...</a></li>
+                  <% } %>
+                    <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+                      <% if (i == current) { %>
+                        <li class="page-item active-page">
+                          <a class="page-link">
+                            <%= i %>
+                          </a>
+                        </li>
+                        <% } else { %>
+                          <li class="page-item">
+                            <a class="page-link" href="/show-recipes-category/mainCourses/<%= i %>">
+                              <%= i %>
+                            </a>
+                          </li>
+                          <% } %>
+                            <% if (i == Number(current) + 4 && i < pages) { %>
+                              <li class="page-item disabled"><a class="page-link">...</a></li>
+                              <% } %>
+                                <% } %>
+                                  <% if (current == pages) { %>
+                                    <li class="page-item disabled"><a class="page-link">Last</a></li>
+                                    <% } else { %>
+                                      <li class="page-item"><a class="page-link" href="/show-recipes-category/mainCourses/<%= pages %>">Last</a></li>
+                                      <% } %>
+      </ul>
+      <% } %>
+  </div>
+
+
+
+
+
+
+
+  <% include ../../partials/footer%>
