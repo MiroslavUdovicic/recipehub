@@ -53,6 +53,6 @@ app.use(categoriesRoutes);
 app.use(commentsRoutes);
 
 
-app.listen(process.env.PORT, process.env.IP, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server has started on port 3000!");
 });

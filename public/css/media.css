@@ -51,7 +51,8 @@
     font-size: 30px;
   }
   .card, .card-landing{
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .add-recipe-caption{
     text-align:center;
@@ -61,18 +62,23 @@
     text-align: center;
   }
   .recipes-list{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0 10px;
   }
   .recipe-categories{
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .list-group-item{
     padding: 5px;
   }
   .content{
     margin-top: 30px;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .show-recipe{
     padding: 0 10px;
@@ -82,7 +88,10 @@
     margin: 0;
   }
   .recipe-name{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -90,18 +99,26 @@
     font-size: 30px;
   }
   .recipe-about{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .show-left, .show-right{
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     margin: 5px 0;
   }
   .directions{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0 10px;
   }
   .ingredients, .instructions{
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     padding: 0 10px;
   }
   .ingredients{
@@ -127,17 +144,22 @@
   .user-wrapper{
     padding: 10px;
     margin-top: 60px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .userpic{
     margin: 0 auto;
   }
   .user-info{
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .user-posts{
    margin-top: 60px;
-   flex-basis: 100%;
+   -ms-flex-preferred-size: 100%;
+       flex-basis: 100%;
  }
   .register-form{
     margin-top: 60px;
@@ -154,17 +176,27 @@
     padding: 5px;
   }
   .footer-top{
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer-info, .footer-contact, .footer-socials{
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     text-align: center;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     padding: 0;
   }
   .footer-bottom{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0;
   }
   .footer-nav{
@@ -226,7 +258,8 @@
     font-size: 30px;
   }
   .card, .card-landing{
-    flex-basis: 40%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
   }
   .add-recipe-caption{
     text-align:center;
@@ -236,18 +269,23 @@
     text-align: center;
   }
   .recipes-list{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0 10px;
   }
   .recipe-categories{
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .list-group-item{
     padding: 5px;
   }
   .content{
     margin-top: 30px;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .show-recipe{
     padding: 0 10px;
@@ -257,7 +295,10 @@
     margin: 0;
   }
   .recipe-name{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -265,18 +306,26 @@
     font-size: 30px;
   }
   .recipe-about{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .show-left, .show-right{
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     margin: 5px 0;
   }
   .directions{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0 10px;
   }
   .ingredients, .instructions{
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     padding: 0 10px;
   }
   .ingredients{
@@ -302,17 +351,22 @@
   .user-wrapper{
     padding: 10px;
     margin-top: 100px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .userpic{
     margin: 0 auto;
   }
   .user-info{
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .user-posts{
    margin-top: 60px;
-   flex-basis: 100%;
+   -ms-flex-preferred-size: 100%;
+       flex-basis: 100%;
  }
   .register-form{
     margin-top: 100px;
@@ -329,17 +383,27 @@
     padding: 5px;
   }
   .footer-top{
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer-info, .footer-contact, .footer-socials{
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     text-align: center;
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     padding: 0;
   }
   .footer-bottom{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0;
   }
   .footer-nav{
@@ -391,7 +455,8 @@
     font-size: 30px;
   }
   .card, .card-landing{
-    flex-basis: 28%;
+    -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
   }
   .add-recipe-caption{
     text-align:center;
@@ -404,13 +469,15 @@
     padding: 0 30px;
   }
   .recipe-categories{
-    flex-basis: 20%;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
   }
   .list-group-item{
     padding: 5px;
   }
   .content{
-    flex-basis: 80%;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
   }
   .show-recipe{
     padding: 0 10px;
