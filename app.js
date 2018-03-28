@@ -18,9 +18,10 @@ const express         = require('express'),
 
 moment().format();
 
+require('dotenv').config();
 
 mongoose.Promise  = require('bluebird');
-mongoose.connect("mongodb://recipehub:lozinka93@ds215759.mlab.com:15759/recipehub");
+mongoose.connect(process.env.DB_DATABASE);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
