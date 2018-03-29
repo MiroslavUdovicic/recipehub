@@ -47,9 +47,6 @@ router.post("/register", function (req, res) {
       email: req.body.email,
       profilePic: req.body.profilePic
     });
-  if (req.body.adminCode === "jasamadmir") {
-    newUser.isAdmin = true;
-  }
   User.register(newUser, req.body.password, function (err, user) {
     if (err) {
       req.flash("error", err.message);

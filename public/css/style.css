@@ -1307,7 +1307,7 @@ page-link:not(:disabled):not(.disabled) {
 /* line 806, C:/Users/Udovicic/Desktop/Projects/RecipeHub/public/sass/style.sass */
 .alert {
   position: absolute;
-  top: 17%;
+  top: 20%;
   left: 0;
   right: 0;
   margin: 0 auto;
